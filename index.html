@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello World</title>
+</head>
+<body>
+
+  <h1>3D Practice</h1>
+  <div class='cube'>
+    <div class='caraL'></div>
+    <div class='caraR'></div>
+  </div>
+  
+  <div class="displayT" id="displayT">
+    <div class="face face1">1</div>
+    <div class="face face2">2</div>
+    <div class="face face3">3</div>
+    <video loop autoplay muted class="displayVideo face4" controls src="http://127.0.0.1:1555/Animes/Media-Nene/Time_2/abzu.0_2023-05-24-22-08-03_1684984083012.mp4"></video>
+    <div class="face face5">5</div>
+    <div class="face face6">6</div>
+  </div>
+
+  <div class="controls">
+    <div class="rotateC">
+      <label for="rotateX">X</label>
+      <input min="0" max="360" type="range" name="" id="rotateX" class="rangeControl">
+      <label for="rotateY">Y</label>
+      <input min="0" max="360" type="range" name="" id="rotateY" class="rangeControl">
+      <label for="rotateZ">Z</label>
+      <input min="0" max="360" type="range" name="" id="rotateZ" class="rangeControl">
+    </div>
+    <div class="positionC">
+      <label for="positionX">X</label>
+      <input min="-500" max="500" type="range" value="0" name="" id="positionX" class="rangeControl">
+      <label for="positionY">Y</label>
+      <input min="-500" max="500" type="range" value="0" name="" id="positionY" class="rangeControl">
+      <label for="positionZ">Z</label>
+      <input min="-500" max="500" type="range" value="0" name="" id="positionZ" class="rangeControl">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
